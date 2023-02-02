@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: grid;
+}
+
+.heading {
+    font-size: 2rem;
+    margin: 0px;
+    justify-self: center;
+}
+
+.game-size {
+    font-size: 1.2rem;
+    margin: 0px;
+    justify-self: center;
+    font-weight: lighter;
+}
+
+.card-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    justify-self: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    perspective: 1200px;
+}
+
+.inner-card {
+    justify-self: center;
+    background-color: rgb(54, 207, 12);
+    border-radius: 10px;
+    position: relative;
+    width: 80%;
+    padding-bottom: 80%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card-back {
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: rgb(54, 207, 12);
+}
+
+.card-back {
+    display: grid;
+    transform: rotateY(180deg);
+}
+
+.food-img {
+    width: 60%;
+    justify-self: center;
+    align-self: center;
+}
